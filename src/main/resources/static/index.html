@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Centro Odontológico</title>
+  </head>
+  <body>
+    <nav>
+      <h2>Centro Odontológico</h2>
+      <ul>
+        <li>Usuario</li>
+        <li><img src="img/Vector.png" /></li>
+      </ul>
+    </nav>
+    <main>
+        <!--Opciones de accion iniciales-->
+      <section>
+        <article class="pacientes">
+          
+            <div class="titulo">
+              <h3>Pacientes</h3>
+            </div>
+            <div class="opciones">
+              <button  id="listado-pac">Listado de pacientes</button>
+              <button id="nuevo-pac">Nuevo Paciente</button>
+            </div>
+            <form class="buscar" id="formBuscar">               
+              <button type="submit">Buscar</button>
+              <input type="text" id="buscarDni" placeholder="Buscar por dni" />
+            </form>
+            
+          
+        </article>
+        <article class="odontologos">
+          
+            <div class="titulo">
+              <h3>Odontólogos</h3>
+            </div>
+            <div class="opciones">
+              <button type="submit" id="listado-odon">Listado de odontólogos</button>
+              <button type="submit" id="nuevo-odon">Nuevo Odontólogo</button>
+            </div>
+            <form class="buscar" id="form-buscar">              
+              <button type="submit">Buscar</button>
+              <input type="text" id="id-buscar" placeholder="Buscar por matricula" />
+            </form>
+          
+        </article>
+        <article class="turnos">
+          
+            <div class="titulo">
+              <h3>Turnos</h3>
+            </div>
+            <div class="opciones">
+              <button type="submit" id="listado-turnos">Todos los turnos</button>
+              <button type="submit" id="ts">Turnos semanales</button>
+              <button type="submit" id="nuevo-turno">Nuevo Turno</button>
+            </div>
+            <form class="buscar" id="form_buscar">             
+              <button type="submit">Buscar</button>
+              <input type="text" id="dni_buscar" placeholder="Buscar por dni" /> 
+            </form>
+         
+        </article>
+      </section>
+
+      <!--Donde se renderiza el listado de odontologos/pacientes/turnos-->
+      <div class="listado">
+        
+      </div>
+
+      <!--Donde se renderiza el formulario de registro de un nuevo odontologo/paciente/turno-->
+      <div class="datos">
+
+      </div>
+
+      <!--Donde se renderiza el resultado de registrar/modificar/eliminar-->
+      <div id="resultado">
+
+      </div>
+    </main>
+    <script src="scripts/odontologos.js"></script>
+    <script src="scripts/pacientes.js"></script>
+    <script src="scripts/turnos.js"></script>
+  </body>
+</html>
